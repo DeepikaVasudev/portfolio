@@ -165,8 +165,6 @@ section div h3{
 #img{
     text-align: center;
     
-    /* align-items: center; */
-    
 }
 
 .info{
@@ -174,7 +172,7 @@ section div h3{
 }
 
 .bb{
-    height: 15px;
+    height: 8px;
     width: 100%;
     background-color: black;
     border: 2px solid black;
@@ -183,8 +181,7 @@ section div h3{
 }
 
 .ob{
-    height: 15px;
-    /* width: 85%; */
+    height: 8px;
     background-color: orange;
     border: 2px solid orange;
     border-radius: 5px;
@@ -193,11 +190,11 @@ section div h3{
 }
 
 #hb{
-    width: 92%;
+    width:90%;
 }
 
 #cb{
-    width: 90%;
+    width: 85%;
 }
 
 #jb{
@@ -205,27 +202,117 @@ section div h3{
 }
 
 #ab{
-    width: 85%;
+    width: 80%;
 }
 
-#bar{
+.bar{
     height: 50px;
     width: 600px;
     position: relative;
 
 }
 
-#html{
+.html{
     display: flex;
     justify-content: space-between;
+    
     
 }
 
 #sdiv{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+    column-gap: 200px;
 }
 
+.sp{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.ic{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+.brand{
+    color: black;
+    font-size: 30px;
+}
+
+.ic:hover{
+    background-image: linear-gradient(to bottom,red,yellow);
+    animation-name: rot;   /*any name can be given*/
+    animation-duration: 4s;
+}
+
+@keyframes rot {
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+        
+    }
+    
+    
+
+    
+}
+
+.ic:hover .brand{
+    color: white;
+}
+
+#arr{
+    float: right;
+    margin-bottom: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: chocolate;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(209, 205, 205);
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 
